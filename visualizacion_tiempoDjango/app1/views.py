@@ -10,8 +10,10 @@ def fechahora(request):
         "time" : strftime("%Y-%m-%d %H:%M %p", localtime()),
         
     }
-    return render(request,'index.html', context)
+    return render(request,'app1/index.html', context)
 
 
 def root(request):
     return redirect ("/")
+
+
